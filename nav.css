@@ -5,10 +5,11 @@
     font-family: Arial, sans-serif;
 }
 #barra{
-    background-color: black;
-    position: fixed;
+    position: sticky; /* ocupa espaço no fluxo, então não cobre o conteúdo */
+    top: 0;
+    z-index: 100;
     width: 100%;
-    padding-top: 20px;
+    padding: 12px 8px;
     text-align: center;
     background-color: #89CFF0;
     border-bottom: 2px black solid;
@@ -16,20 +17,37 @@
 nav ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap; /* quebra a linha em telas estreitas */
     justify-content: center;
-}
-nav ul li{
-    margin: 5px;
+    gap: 6px;
 }
 nav ul li a{
+    display: inline-block; /* a borda não se parte quando o texto é longo */
+    white-space: nowrap;
     color: midnightblue;
-    text-decoration: double;
-    font-size: 20px;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 8px;
     border: 3px black solid;
-    padding: 5px 5px;
+    padding: 4px 8px;
     background-color: white;
 }
-nav ul li a:hover{
-    color: #89CFF0;
+nav ul li a:hover,
+nav ul li a:focus-visible{
+    color: white;
+    background-color: midnightblue;
+}
+
+@media (max-width: 600px){
+    #barra{
+        position: static; /* no celular a barra ocupa várias linhas, então não fica presa no topo */
+    }
+    nav ul{
+        gap: 6px;
+    }
+    nav ul li a{
+        font-size: 15px;
+        padding: 4px 8px;
+        border-width: 2px;
+    }
 }
