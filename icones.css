@@ -1,0 +1,45 @@
+#rodape{ /*Este é o HR*/
+    border: none; 
+    height: 5px; 
+    background-color: black; 
+    width: 100%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between; /* Um para a esquerda, outro para a direita */
+    align-items: center;
+    padding: 20px 40px; /* Espaçamento interno */
+}
+
+.copyright {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.icones-flutuantes {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.icones-flutuantes a {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.icones-flutuantes a:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+}
+
+.icones-flutuantes svg {
+    width: 28px;
+    height: 28px;
+    color: green;
+}

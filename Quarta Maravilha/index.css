@@ -1,0 +1,44 @@
+#home{
+    background: url(../midia/fiat-uno-com-escada.jpg) center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: black 3px solid;
+}
+
+#home h1{
+    font-size: 45px;
+    padding-top: 80vh;
+}
+
+#home h1::first-letter{
+    font-size: 50px;
+}
+
+#home p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.caps{
+    padding: 50px 46vh;
+    text-align: center;
+}
+
+.caps h1{
+    font-size: 35px;
+}
+
+.caps ul{
+    padding: 0px 26vh;
+}
+
+.sem_forma{
+    list-style: none;
+}
+
+.caps ol{
+    padding: 0px 28vh;
+}

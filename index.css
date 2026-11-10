@@ -1,0 +1,32 @@
+#home{
+    background: url(midia/fundo.jpg) center/cover no-repeat;
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: black 3px solid;
+}
+
+#home h1{
+    font-size: 45px;
+    padding-top: 9vh;
+}
+
+#home p{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#detalhes h1{
+    font-size: 30px;
+}
+
+.textinho{
+    font-size: 20px;
+}
