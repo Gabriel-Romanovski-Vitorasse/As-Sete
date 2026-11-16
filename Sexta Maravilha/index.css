@@ -1,5 +1,5 @@
 #home{
-    background: url("../midia/messi.jpg") center/cover no-repeat;
+    background: url("../midia/messi.jpg") 64% center/cover no-repeat; /* centraliza no Messi, que fica à direita da foto */
     color: white;
     min-height: calc(100vh - 70px); /* altura da tela menos a barra de navegação */
     display: flex;
