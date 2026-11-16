@@ -3,12 +3,15 @@
     height: 5px; 
     background-color: black; 
     width: 100%;
+    opacity: 1;
 }
 
 .rodape {
     display: flex;
     justify-content: space-between; /* Um para a esquerda, outro para a direita */
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
     padding: 20px 40px; /* Espaçamento interno */
 }
 
@@ -42,4 +45,37 @@
     width: 28px;
     height: 28px;
     color: green;
+}
+
+/* Botão de tocar/pausar a música (criado pelo music.js) */
+.botao-musica {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 100;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: midnightblue;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.botao-musica:hover,
+.botao-musica:focus-visible {
+    color: white;
+    background-color: midnightblue;
+}
+
+/* Espaço no rodapé para o botão de música não cobrir os ícones */
+body:has(.botao-musica) .rodape {
+    padding-bottom: 90px;
+}
+
+@media (max-width: 600px) {
+    .rodape {
+        padding: 20px;
+    }
 }

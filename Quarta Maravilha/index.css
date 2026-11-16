@@ -1,44 +1,62 @@
 #home{
-    background: url(../midia/fiat-uno-com-escada.jpg) center/cover no-repeat;
+    background: url("../midia/fiat-uno-com-escada.jpg") center/cover no-repeat;
     color: white;
-    height: 100vh;
+    min-height: calc(100vh - 70px); /* altura da tela menos a barra de navegação */
     display: flex;
     flex-direction: column;
+    justify-content: flex-end; /* título na parte de baixo da imagem */
+    padding: 40px 20px;
     text-align: center;
     border-bottom: black 3px solid;
 }
 
 #home h1{
     font-size: 45px;
-    padding-top: 80vh;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9), 2px 2px 4px black;
 }
 
 #home h1::first-letter{
     font-size: 50px;
 }
 
-#home p{
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
 .caps{
-    padding: 50px 46vh;
+    max-width: 900px; /* largura do texto limitada e centralizada */
+    margin: 0 auto;
+    padding: 50px 20px;
     text-align: center;
 }
 
 .caps h1{
     font-size: 35px;
+    margin-bottom: 16px;
 }
 
-.caps ul{
-    padding: 0px 26vh;
+.caps p,
+.caps ul,
+.caps ol{
+    margin-bottom: 12px;
+}
+
+.caps ul,
+.caps ol{
+    list-style-position: inside;
 }
 
 .sem_forma{
     list-style: none;
 }
 
-.caps ol{
-    padding: 0px 28vh;
+@media (max-width: 600px){
+    #home h1{
+        font-size: 30px;
+    }
+    #home h1::first-letter{
+        font-size: 34px;
+    }
+    .caps{
+        padding: 30px 16px;
+    }
+    .caps h1{
+        font-size: 26px;
+    }
 }
